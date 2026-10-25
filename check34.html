@@ -173,11 +173,11 @@ function result(){
  h+='</p></div>';
  if(R.tr>=0){
   h+='<p>'+TRLEAD+'</p>';
-  h+='<h3>'+ST4[R.tr+1].short+'란</h3>'+'<p>'+BRIDGE[R.tr+1]+'</p>'+paras(ST4[R.tr+1].basic);
-  h+='<h3>'+ST4[R.tr+2].short+'란</h3>'+'<p>'+BRIDGE[R.tr+2]+'</p>'+paras(ST4[R.tr+2].basic);
+  h+='<h3>네 단계 가운데 '+ST4[R.tr+1].short+'</h3>'+'<p>'+BRIDGE[R.tr+1]+'</p>'+paras(ST4[R.tr+1].basic);
+  h+='<h3>네 단계 가운데 '+ST4[R.tr+2].short+'</h3>'+'<p>'+BRIDGE[R.tr+2]+'</p>'+paras(ST4[R.tr+2].basic);
   h+='<h3>건너가는 자리란</h3><p>'+TRB[R.tr]+'</p>';
  }else{
-  h+='<h3>'+ST4[R.p].short+'란</h3>'+'<p>'+BRIDGE[R.p]+'</p>'+paras(ST4[R.p].basic);
+  h+='<h3>네 단계 가운데 '+ST4[R.p].short+'</h3>'+'<p>'+BRIDGE[R.p]+'</p>'+paras(ST4[R.p].basic);
  }
  h+='<details><summary style="cursor:pointer;color:#1f7e79;margin:1em 0">네 단계 전체 설명 보기</summary><p>'+INTRO+' 이 질문지는 그 과정을 연금술의 네 단계에 빗대어 살핍니다. 이 결과는 높고 낮음을 가리는 점수가 아니라 지금 걷고 있는 길의 위치를 알려 주는 표시이며, 시간이 지나 다시 해 보면 달라질 수 있습니다.</p>';
  for(var q=0;q<4;q++)h+='<h4 style="margin:1.2em 0 .2em;color:#1a2b4a">'+(q+1)+'단계 '+ST4[q].name+'</h4>'+paras(ST4[q].basic);
